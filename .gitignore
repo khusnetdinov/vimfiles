@@ -1,4 +1,4 @@
-# Vagrant
 Vagrantfile
 .vagrant
-
+*.swp
+*.swo
