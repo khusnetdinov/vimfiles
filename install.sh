@@ -3,17 +3,25 @@
 OS=`uname`
 
 darwin_installation() {
-  echo 'Start installation for MacOS'
+  echo "Start installation for MacOS"
+
+  insttalation
 }
 
 linux_installation() {
-  echo 'Start installation for Linux'
+  echo "Start installation for Linux"
+
+  installation
 }
 
-if [[ "$OS" == 'Darwin' ]]; then
+instalation() {
+  echo "Start installation"
+}
+
+if [[ "$OS" == "Darwin" ]]; then
   darwin_installation
-elif [[ "$OS" == 'Linux' ]]; then
+elif [[ "$OS" == "Linux" ]]; then
   linux_installation
 else
-  echo 'Installation for your OS is not implemented!'
+  echo "Installation for your OS is not implemented!"
 fi
