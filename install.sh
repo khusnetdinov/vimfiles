@@ -32,7 +32,7 @@ linux_installation() {
   installation
 }
 
-instalation() {
+installation() {
 
   echo ""
   echo "Start installation"
