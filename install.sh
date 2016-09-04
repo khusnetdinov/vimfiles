@@ -16,7 +16,7 @@ linux_installation() {
   install_packages() {
     sudo apt-get install curl
     sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
-    sudo apt-get install git git-core git-flow
+    sudo apt-get install git-core git-flow
   }
 
   echo "Start installation for Linux"

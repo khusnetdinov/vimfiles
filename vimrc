@@ -5,6 +5,10 @@
 let mapleader = ","
 filetype off
 
+"*****************************************************************************
+""" Functions
+"*****************************************************************************
+
 "" Functions
 "function! NumberToggle()
   "if(&relativenumber == 1)
@@ -14,6 +18,15 @@ filetype off
   "endif
 "endfunc
 "nnoremap <C-n> :call NumberToggle()<cr>
+
+"function! s:SourceConfigFilesIn(directory)
+  "let directory_splat = '~/.vim/' . a:directory . '/*'
+  "for config_file in split(glob(directory_splat), '\n')
+    "if filereadable(config_file)
+      "execute 'source' config_file
+    "endif
+  "endfor
+"endfunction
 
 "*****************************************************************************
 """ Base setting
@@ -26,6 +39,9 @@ set nocompatible
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
+set bomb
+set binary
+set ttyfast
 
 "" Fix backspace indent
 set backspace=indent,eol,start
@@ -48,11 +64,6 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-
-"" Encoding
-set bomb
-set binary
-set ttyfast
 
 "" Backup
 let s:backup="false"
@@ -96,7 +107,8 @@ set modeline
 set modelines=10
 
 "" Trailing symbols
-set list
+set list listchars=tab:··,trail:·
+highlight ColorColumn ctermbg=LightGray
 
 "" Cursor
 set cursorline
@@ -117,7 +129,12 @@ set ttimeoutlen=1
 set t_Co=256
 set textwidth=80
 set colorcolumn=+1
-highlight ColorColumn ctermbg=lightgrey
+highlight ColorColumn ctermbg=LightGray
+
+"*****************************************************************************
+""" Theme
+"*****************************************************************************
+
 
 "*****************************************************************************
 """ Abbreviations
