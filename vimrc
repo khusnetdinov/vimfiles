@@ -6,6 +6,28 @@ let mapleader = ","
 filetype off
 
 "*****************************************************************************
+""" Plugins load settings
+"*****************************************************************************
+
+let vimplug_exists=expand('~/.vim/autoload/plug.vim')
+
+let g:vim_bootstrap_editor = "vim"
+let g:vim_bootstrap_langs = "javascript,coffescript,typescript,ruby,erlang,elixir,html,slim,haml,erb,ejs,css,scss,sass,lua,go,python"
+
+if !filereadable(vimvimplug_exists)
+  echo ""
+  echo "Installing Vim-Plug..."
+  echo ""
+
+  silent !\curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+  let g:not_finish_vimplug = "yes"
+  autocmd VimEnter * PlugInstall
+endif
+
+call plug#begin(expand('~/.vim/plugged'))
+
+"*****************************************************************************
 """ Functions
 "*****************************************************************************
 
@@ -19,21 +41,14 @@ filetype off
 "endfunc
 "nnoremap <C-n> :call NumberToggle()<cr>
 
-"function! s:SourceConfigFilesIn(directory)
-  "let directory_splat = '~/.vim/' . a:directory . '/*'
-  "for config_file in split(glob(directory_splat), '\n')
-    "if filereadable(config_file)
-      "execute 'source' config_file
-    "endif
-  "endfor
-"endfunction
-
 "*****************************************************************************
 """ Base setting
 "*****************************************************************************
 
 "" Compability
-set nocompatible
+if has('vim_starting')
+  set nocompatible
+endif
 
 "" Encoding
 set encoding=utf-8
