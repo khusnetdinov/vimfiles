@@ -14,7 +14,7 @@ let vimplug_exists=expand('~/.vim/autoload/plug.vim')
 let g:vim_bootstrap_editor = "vim"
 let g:vim_bootstrap_langs = "javascript,coffescript,typescript,ruby,erlang,elixir,html,slim,haml,erb,ejs,css,scss,sass,lua,go,python"
 
-if !filereadable(vimvimplug_exists)
+if !filereadable(vimplug_exists)
   echo ""
   echo "Installing Vim-Plug..."
   echo ""

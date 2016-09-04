@@ -8,7 +8,7 @@ darwin_installation() {
   echo "Start installation for MacOS"
   echo ""
 
-  insttalation
+  installation
 }
 
 linux_installation() {
@@ -28,6 +28,7 @@ linux_installation() {
   echo ""
 
   updates_system
+  install_packages
   installation
 }
 
@@ -37,7 +38,6 @@ instalation() {
   echo "Start installation"
   echo ""
 
-  curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 }
 
 if [[ "$OS" == "Darwin" ]]; then
