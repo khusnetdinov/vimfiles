@@ -45,11 +45,6 @@ call plug#begin(expand('~/.vim/plugged'))
 """ Base setting
 "*****************************************************************************
 
-"" Compability
-if has('vim_starting')
-  set nocompatible
-endif
-
 "" Encoding
 set encoding=utf-8
 set fileencoding=utf-8
@@ -137,7 +132,6 @@ set wildmenu
 set wildmode=list:full
 
 "" Switching mode tricks
-set noesckeys
 set ttimeout
 set ttimeoutlen=1
 
