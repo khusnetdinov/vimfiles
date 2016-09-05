@@ -1,18 +1,18 @@
 "*****************************************************************************
 """ Loading vim rc and plugins settings
 "*****************************************************************************
-
-let mapleader = ","
+set nocompatible
+let mapleadeu=","
 filetype off
 
 "*****************************************************************************
-""" Plugins load settings
+""" Base plugins loading
 "*****************************************************************************
 
 let vimplug_exists=expand('~/.vim/autoload/plug.vim')
 
-let g:vim_bootstrap_editor = "vim"
-let g:vim_bootstrap_langs = "javascript,coffescript,typescript,ruby,erlang,elixir,html,slim,haml,erb,ejs,css,scss,sass,lua,go,python"
+let g:vim_bootstrap_editor="vim"
+let g:vim_bootstrap_langs="javascript,coffescript,typescript,ruby,erlang,elixir,html,slim,haml,erb,ejs,css,scss,sass,lua,go,python,md"
 
 if !filereadable(vimplug_exists)
   echo ""
@@ -21,7 +21,7 @@ if !filereadable(vimplug_exists)
 
   silent !\curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-  let g:not_finish_vimplug = "yes"
+  let g:not_finish_vimplug="yes"
   autocmd VimEnter * PlugInstall
 endif
 
@@ -88,6 +88,7 @@ set shell=/bin/sh
 set history=500
 
 set lazyredraw
+set timeout ttimeoutlen=100 timeoutlen=5000
 
 "*****************************************************************************
 """ Visual settings
@@ -108,10 +109,12 @@ set modelines=10
 
 "" Trailing symbols
 set list listchars=tab:··,trail:·
-highlight ColorColumn ctermbg=LightGray
-
+highlight ColorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 "" Cursor
 set cursorline
+set cursorcolumn
+highlight CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+highlight CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
 "" Split
 set splitbelow
@@ -128,13 +131,20 @@ set ttimeoutlen=1
 set t_Co=256
 set textwidth=80
 set colorcolumn=+1
-highlight ColorColumn ctermbg=LightGray
+highlight ColorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
 "*****************************************************************************
-""" Theme
+""" Theme and colors
+"*****************************************************************************
+"
+"*****************************************************************************
+""" Settings: start
 "*****************************************************************************
 
-
+"*****************************************************************************
+""" Settings end
+"*****************************************************************************
+"
 "*****************************************************************************
 """ Abbreviations
 "*****************************************************************************
@@ -149,4 +159,6 @@ cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
 
+call plug#end()
+filetype plugin indent on
 syntax on
