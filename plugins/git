@@ -7,6 +7,19 @@ Plug 'tpope/vim-fugitive'
 
 set updatetime=250
 
+if exists("*fugitive#statusline")
+  set statusline+=%{fugitive#statusline()}
+endif
+
+noremap <Leader>gw :Gwrite<CR>
+noremap <Leader>gc :Gcommit<CR>
+noremap <Leader>gph :Gpush<CR>
+noremap <Leader>gpl :Gpull<CR>
+noremap <Leader>gs :Gstatus<CR>
+noremap <Leader>gb :Gblame<CR>
+noremap <Leader>gd :Gvdiff<CR>
+noremap <Leader>gr :Gremove<CR>
+
 nmap <Leader>hn <Plug>GitGutterNextHunk
 nmap <Leader>hp <Plug>GitGutterPrevHunk
 nmap <Leader>hs <Plug>GitGutterStageHunk
