@@ -54,6 +54,11 @@ if filereadable(s:plugin_themes)
   execute 'source' s:plugin_themes
 endif
 
+let s:plugin_airline = 'plugins/airline'
+if filereadable(s:plugin_airline)
+  execute 'source' s:plugin_airline
+endif
+
 let s:plugin_autoformatting = 'plugins/autoformatting'
 if filereadable(s:plugin_autoformatting)
   execute 'source' s:plugin_autoformatting
