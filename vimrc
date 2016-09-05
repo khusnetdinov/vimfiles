@@ -1,3 +1,7 @@
+let s:plugin_shell = 'plugins/shell'
+if filereadable(s:plugin_shell)
+  execute 'source' s:plugin_shell
+endif
 "*****************************************************************************
 """ Loading vim rc and plugins settings
 "*****************************************************************************
@@ -90,6 +94,11 @@ endif
 let s:plugin_shell = 'plugins/shell'
 if filereadable(s:plugin_shell)
   execute 'source' s:plugin_shell
+endif
+
+let s:plugin_syntax = 'plugins/syntax'
+if filereadable(s:plugin_syntax)
+  execute 'source' s:plugin_syntax
 endif
 
 let s:plugin_autoformatting = 'plugins/autoformatting'
