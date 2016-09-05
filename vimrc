@@ -85,6 +85,11 @@ if filereadable(s:plugin_endwise)
   execute 'source' s:plugin_endwise
 endif
 
+let s:plugin_git = 'plugins/git'
+if filereadable(s:plugin_git)
+  execute 'source' s:plugin_git
+endif
+
 let s:plugin_navigation = 'plugins/navigation'
 if filereadable(s:plugin_navigation)
   execute 'source' s:plugin_navigation
