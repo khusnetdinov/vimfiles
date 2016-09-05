@@ -1,8 +1,9 @@
 "*****************************************************************************
 """ Loading vim rc and plugins settings
 "*****************************************************************************
+"
 set nocompatible
-let mapleadeu=","
+let mapleader=","
 filetype off
 
 "*****************************************************************************
@@ -16,7 +17,7 @@ let g:vim_bootstrap_langs="javascript,coffescript,typescript,ruby,erlang,elixir,
 
 if !filereadable(vimplug_exists)
   echo ""
-  echo "Installing Vim-Plug..."
+  echo "Installing pligins..."
   echo ""
 
   silent !\curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -30,6 +31,8 @@ call plug#begin(expand('~/.vim/plugged'))
 "*****************************************************************************
 """ Functions
 "*****************************************************************************
+
+"" Todo :ThemeInstall <theme_name> => Call plugin install and link to color dir
 
 "*****************************************************************************
 """ Base setting
@@ -136,7 +139,11 @@ highlight ColorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred gui
 "*****************************************************************************
 """ Theme and colors
 "*****************************************************************************
-"
+
+Plug 'flazz/vim-colorschemes'
+
+colorscheme jellybeans
+
 "*****************************************************************************
 """ Settings: start
 "*****************************************************************************
@@ -144,10 +151,11 @@ highlight ColorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred gui
 "*****************************************************************************
 """ Settings end
 "*****************************************************************************
-"
+
 "*****************************************************************************
 """ Abbreviations
 "*****************************************************************************
+
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
 cnoreabbrev Qall! qall!

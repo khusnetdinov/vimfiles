@@ -1,5 +1,12 @@
 # Dotfiles:
 
-### .vimrc
+### Requirements
 
-Configuration file is devided to portions of setting witch is localed in `./rcs` and `./plugins` folders. For example config for tmux you can find under `./plugins/ack` or viseal settings under `./rc/visual`
+Before installing make sure that you have installed `git`, `macvim`.
+
+### Installation
+
+### Post install
+
+You need to create link `./vim/colors` to `.vim/plugged/vim-colorschemes`.
+
