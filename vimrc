@@ -32,7 +32,9 @@ call plug#begin(expand('~/.vim/plugged'))
 """ Functions
 "*****************************************************************************
 
-"" Todo :ThemeInstall <theme_name> => Call plugin install and link to color dir
+"*****************************************************************************
+""" Commands
+"*****************************************************************************
 
 "*****************************************************************************
 """ Base setting
@@ -143,6 +145,12 @@ highlight ColorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred gui
 Plug 'flazz/vim-colorschemes'
 
 colorscheme jellybeans
+
+let vim_colorschemes_exists=expand('~/.vim/colors')
+
+if !filereadable(vim_colorschemes_exists)
+  silent !ln -s ~/.vim/plugged/vim-colorschemes/colors ~/.vim/colors
+endif
 
 "*****************************************************************************
 """ Settings: start
