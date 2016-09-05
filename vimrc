@@ -10,10 +10,8 @@ filetype off
 """ Base plugins loading
 "*****************************************************************************
 
-let vimplug_exists=expand('~/.vim/autoload/plug.vim')
-
 let g:vim_bootstrap_editor="vim"
-let g:vim_bootstrap_langs="javascript,coffescript,typescript,ruby,erlang,elixir,html,slim,haml,erb,ejs,css,scss,sass,lua,go,python,md"
+let vimplug_exists=expand('~/.vim/autoload/plug.vim')
 
 if !filereadable(vimplug_exists)
   echo ""
@@ -64,6 +62,16 @@ if filereadable(s:plugin_comments)
   execute 'source' s:plugin_comments
 endif
 
+let s:plugin_endwise = 'plugins/endwise'
+if filereadable(s:plugin_endwise)
+  execute 'source' s:plugin_endwise
+endif
+
+let s:plugin_abolish = 'plugins/abolish'
+if filereadable(s:plugin_abolish)
+  execute 'source' s:plugin_abolish
+endif
+
 let s:plugin_navigation = 'plugins/navigation'
 if filereadable(s:plugin_navigation)
   execute 'source' s:plugin_navigation
@@ -72,6 +80,16 @@ endif
 let s:plugin_airline = 'plugins/airline'
 if filereadable(s:plugin_airline)
   execute 'source' s:plugin_airline
+endif
+
+let s:plugin_repeat = 'plugins/repeat'
+if filereadable(s:plugin_repeat)
+  execute 'source' s:plugin_repeat
+endif
+
+let s:plugin_shell = 'plugins/shell'
+if filereadable(s:plugin_shell)
+  execute 'source' s:plugin_shell
 endif
 
 let s:plugin_autoformatting = 'plugins/autoformatting'
