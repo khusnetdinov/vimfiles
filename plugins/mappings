@@ -2,13 +2,17 @@
 """ Mappings
 "*****************************************************************************
 
-"" Tabs
 nnoremap <Tab> gt
 nnoremap <S-Tab> gT
 nnoremap <silent> <S-t> :tabnew<CR>
 
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
+
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+noremap <C-h> <C-w>h
 
 " vim:ft=vim
 
