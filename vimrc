@@ -44,6 +44,11 @@ if filereadable(s:plugin_general)
   execute 'source' s:plugin_general
 endif
 
+let s:plugin_mappings = 'plugins/mappings'
+if filereadable(s:plugin_mappings)
+  execute 'source' s:plugin_mappings
+endif
+
 let s:plugin_visual = 'plugins/visual'
 if filereadable(s:plugin_visual)
   execute 'source' s:plugin_visual
@@ -57,6 +62,11 @@ endif
 let s:plugin_comments = 'plugins/comments'
 if filereadable(s:plugin_comments)
   execute 'source' s:plugin_comments
+endif
+
+let s:plugin_navigation = 'plugins/navigation'
+if filereadable(s:plugin_navigation)
+  execute 'source' s:plugin_navigation
 endif
 
 let s:plugin_airline = 'plugins/airline'
