@@ -1,7 +1,3 @@
-let s:plugin_shell = 'plugins/shell'
-if filereadable(s:plugin_shell)
-  execute 'source' s:plugin_shell
-endif
 "*****************************************************************************
 """ Loading vim rc and plugins settings
 "*****************************************************************************
@@ -14,7 +10,8 @@ filetype off
 """ Base plugins loading
 "*****************************************************************************
 
-let vimplug_exists=expand('~/.vim/autoload/plug.vim')
+let home = '~/.vim/'
+let vimplug_exists=expand(home . 'autoload/plug.vim')
 
 if !filereadable(vimplug_exists)
   echo ""
@@ -27,33 +24,36 @@ if !filereadable(vimplug_exists)
   autocmd VimEnter * PlugInstall
 endif
 
-call plug#begin(expand('~/.vim/plugged'))
+call plug#begin(expand(home . 'plugged'))
+
 "*****************************************************************************
 
-let s:plugin_functions = 'plugins/functions'
-if filereadable(s:plugin_functions)
-  execute 'source' s:plugin_functions
-endif
-
-let s:plugin_commands = 'plugins/commands'
-if filereadable(s:plugin_commands)
-  execute 'source' s:plugin_commands
-endif
-
-let s:plugin_general = 'plugins/general'
+let s:plugin_general = 'settings/general'
 if filereadable(s:plugin_general)
   execute 'source' s:plugin_general
 endif
 
-let s:plugin_mappings = 'plugins/mappings'
+let s:plugin_functions = 'settings/functions'
+if filereadable(s:plugin_functions)
+  execute 'source' s:plugin_functions
+endif
+
+let s:plugin_commands = 'settings/commands'
+if filereadable(s:plugin_commands)
+  execute 'source' s:plugin_commands
+endif
+
+let s:plugin_mappings = 'settings/mappings'
 if filereadable(s:plugin_mappings)
   execute 'source' s:plugin_mappings
 endif
 
-let s:plugin_visual = 'plugins/visual'
+let s:plugin_visual = 'settings/visual'
 if filereadable(s:plugin_visual)
   execute 'source' s:plugin_visual
 endif
+
+"*****************************************************************************
 
 let s:plugin_themes = 'plugins/themes'
 if filereadable(s:plugin_themes)
@@ -111,6 +111,7 @@ if filereadable(s:plugin_vimshell)
 endif
 
 "*****************************************************************************
+
 call plug#end()
 filetype plugin indent on
 syntax on
