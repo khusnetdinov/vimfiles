@@ -54,6 +54,11 @@ if filereadable(s:plugin_themes)
   execute 'source' s:plugin_themes
 endif
 
+let s:plugin_comments = 'plugins/comments'
+if filereadable(s:plugin_comments)
+  execute 'source' s:plugin_comments
+endif
+
 let s:plugin_airline = 'plugins/airline'
 if filereadable(s:plugin_airline)
   execute 'source' s:plugin_airline
