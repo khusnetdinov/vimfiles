@@ -1,0 +1,60 @@
+"*****************************************************************************
+""" General
+"*****************************************************************************
+
+"" Encoding
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8
+set bomb
+set binary
+set ttyfast
+
+"" Fix backspace indent
+set backspace=indent,eol,start
+
+"" Tabs.
+set tabstop=2
+set shiftwidth=2
+set softtabstop=0
+set shiftround
+set expandtab
+
+"" Map leader to ,
+let mapleader=','
+
+"" Enable hidden buffers
+set hidden
+
+"" Searching
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+"" Backup
+let s:backup="false"
+if s:backup
+  set backup
+  set backupdir=~/.vim/temp/backup
+  set directory=~/.vim/temp/swap
+else
+  set nobackup
+  set nowritebackup
+  set noswapfile
+endif
+
+set secure
+set autoread
+set autowrite
+
+set fileformats=unix,dos,mac
+set showcmd
+set shell=/bin/sh
+
+set history=500
+
+"set lazyredraw
+set timeout ttimeoutlen=100 timeoutlen=5000
+
+" vim:ft=vim

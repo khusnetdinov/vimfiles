@@ -1,0 +1,44 @@
+"*****************************************************************************
+""" Visual settings
+"*****************************************************************************
+
+"" Linenumbers
+set ruler
+set number
+autocmd InsertEnter * :set relativenumber
+autocmd InsertLeave * :set number
+
+"" Status line
+set laststatus=2
+set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+
+set modeline
+set modelines=10
+
+"" Trailing symbols
+set list listchars=tab:··,trail:·
+highlight ColorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+"" Cursor
+set cursorline
+set cursorcolumn
+highlight CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+highlight CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
+"" Split
+set splitbelow
+set splitright
+
+"" Wildmenu
+set wildmenu
+set wildmode=list:full
+
+"" Switching mode tricks
+set ttimeout
+set ttimeoutlen=1
+
+set t_Co=256
+set textwidth=80
+set colorcolumn=+1
+highlight ColorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
+" vim:ft=vim

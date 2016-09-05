@@ -1,0 +1,16 @@
+"*****************************************************************************
+""" Theme and colors
+"*****************************************************************************
+
+Plug 'flazz/vim-colorschemes'
+
+colorscheme jellybeans
+
+function PlugThemes()
+  silent !ln -s ~/.vim/plugged/vim-colorschemes/colors ~/.vim/colors
+  redraw!
+endfunction
+
+command! PlugThemes :call PlugThemes()
+
+" vim:ft=vim
