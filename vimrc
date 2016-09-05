@@ -157,8 +157,39 @@ endif
 "*****************************************************************************
 
 "*****************************************************************************
-""" Settings end
+""" Settings: end
 "*****************************************************************************
+
+"*****************************************************************************
+""" Autoformatting files
+"*****************************************************************************
+
+autocmd BufWritePre *.html :%s/\s\+$//e
+autocmd BufWritePre *.slim :%s/\s\+$//e
+autocmd BufWritePre *.haml :%s/\s\+$//e
+autocmd BufWritePre *.erb  :%s/\s\+$//e
+autocmd BufWritePre *.ejs  :%s/\s\+$//e
+autocmd BufWritePre *.jade :%s/\s\+$//e
+
+autocmd BufWritePre *.css  :%s/\s\+$//e
+autocmd BufWritePre *.scss :%s/\s\+$//e
+autocmd BufWritePre *.sass :%s/\s\+$//e
+autocmd BufWritePre *.less :%s/\s\+$//e
+
+autocmd BufWritePre *.js   :%s/\s\+$//e
+autocmd BufWritePre *.es6 :%s/\s\+$//e
+autocmd BufWritePre *.coffee :%s/\s\+$//e
+autocmd BufWritePre *.ts  :%s/\s\+$//e
+
+autocmd BufWritePre *.elm :%s/\s\+$//e
+autocmd BufWritePre *.ex :%s/\s\+$//e
+autocmd BufWritePre *.erl :%s/\s\+$//e
+
+autocmd BufWritePre *.rb :%s/\s\+$//e
+autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre *.go :%s/\s\+$//e
+autocmd BufWritePre *.lua :%s/\s\+$//e
+autocmd BufWritePre *.md :%s/\s\+$//e
 
 "*****************************************************************************
 """ Abbreviations
