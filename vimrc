@@ -92,7 +92,7 @@ set shell=/bin/sh
 
 set history=500
 
-set lazyredraw
+"set lazyredraw
 set timeout ttimeoutlen=100 timeoutlen=5000
 
 "*****************************************************************************
@@ -146,11 +146,12 @@ Plug 'flazz/vim-colorschemes'
 
 colorscheme jellybeans
 
-let vim_colorschemes_exists=expand('~/.vim/colors')
-
-if !filereadable(vim_colorschemes_exists)
+function PlugThemes()
   silent !ln -s ~/.vim/plugged/vim-colorschemes/colors ~/.vim/colors
-endif
+  redraw!
+endfunction
+
+command! PlugThemes :call PlugThemes()
 
 "*****************************************************************************
 """ Settings: start
