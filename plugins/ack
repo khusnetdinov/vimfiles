@@ -1,0 +1,10 @@
+"*****************************************************************************
+""" Ack | https://github.com/mileszs/ack.vim
+"*****************************************************************************
+
+Plug 'mileszs/ack.vim'
+
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
+
+" vim:ft=vim

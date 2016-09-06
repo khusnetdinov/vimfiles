@@ -1,7 +1,5 @@
-
 "*****************************************************************************
 """ Loading vim rc and plugins settings
-"*****************************************************************************
 
 set nocompatible
 let mapleader=","
@@ -64,6 +62,11 @@ endif
 let s:plugin_comments = 'plugins/comments'
 if filereadable(s:plugin_comments)
   execute 'source' s:plugin_comments
+endif
+
+let s:plugin_ack = 'plugins/ack'
+if filereadable(s:plugin_ack)
+  execute 'source' s:plugin_ack
 endif
 
 let s:plugin_abolish = 'plugins/abolish'
