@@ -84,6 +84,11 @@ if filereadable(s:plugin_airline)
   execute 'source' s:plugin_airline
 endif
 
+let s:plugin_ctrlp = 'plugins/ctrlp'
+if filereadable(s:plugin_ctrlp)
+  execute 'source' s:plugin_ctrlp
+endif
+
 let s:plugin_eunuch = 'plugins/eunuch'
 if filereadable(s:plugin_eunuch)
   execute 'source' s:plugin_eunuch
@@ -179,23 +184,16 @@ endif
 "*****************************************************************************
 
 " Plug 'tpope/vim-surround'
-"
-" Plug 'merlinrebrovic/focus.vim'
-" Plug 'amerlyq/vim-focus-autocmd'
-"
-" Plug 'godlygeek/tabular'
-" Plug 'vim-scripts/AutoClose'
-"
-" Plug 'bkad/CamelCaseMotion'
-" Plug 'Lokaltog/vim-easymotion'
-"
-" Plug 'kien/ctrlp.vim'
-"
+
 " session management
 " nnoremap <leader>so :OpenSession<Space>
 " nnoremap <leader>ss :SaveSession<Space>
 " nnoremap <leader>sd :DeleteSession<CR>
 " nnoremap <leader>sc :CloseSession<CR>
+"
+" Lua | Ruby | Erlang | Elixir | MD 
+" Rails | Rspec | Phoenix | Varant | Docker | Ansible 
+" Upcase libs
 
 call plug#end()
 filetype plugin indent on
