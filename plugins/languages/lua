@@ -1,8 +1,8 @@
 "*****************************************************************************
-""" Css
+""" Lua
 "*****************************************************************************
 
-Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'scss', 'sass', 'less'] }
-Plug 'ap/vim-css-color'
+Plug 'xolox/vim-lua-ftplugin'
+Plug 'xolox/vim-lua-inspect'
 
 " vim:ft=vim

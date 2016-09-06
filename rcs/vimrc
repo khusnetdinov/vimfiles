@@ -198,11 +198,31 @@ if filereadable(s:plugin_elm)
   execute 'source' s:plugin_elm
 endif
 
+let s:plugin_markdown = 'plugins/languages/markdown'
+if filereadable(s:plugin_markdown)
+  execute 'source' s:plugin_markdown
+endif
+
+let s:plugin_lua = 'plugins/languages/lua'
+if filereadable(s:plugin_lua)
+  execute 'source' s:plugin_lua
+endif
+
+let s:plugin_elixir = 'plugins/languages/elixir'
+if filereadable(s:plugin_elixir)
+  execute 'source' s:plugin_elixir
+endif
+
+let s:plugin_erlang = 'plugins/languages/erlang'
+if filereadable(s:plugin_erlang)
+  execute 'source' s:plugin_erlang
+endif
+
 "*****************************************************************************
 
 " Plug 'tpope/vim-surround'
 
-" Lua | Ruby | Erlang | Elixir | MD 
+" Ruby | Erlang | Elixir  
 " Rails | Rspec | Phoenix | Varant | Docker | Ansible 
 " Upcase libs
 "

@@ -1,8 +1,7 @@
 "*****************************************************************************
-""" Css
+""" Erlang
 "*****************************************************************************
 
-Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'scss', 'sass', 'less'] }
-Plug 'ap/vim-css-color'
+Plug 'jimenezrick/vimerl', { 'for': 'erlang' }
 
 " vim:ft=vim
