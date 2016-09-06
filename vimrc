@@ -95,9 +95,9 @@ if filereadable(s:plugin_git)
   execute 'source' s:plugin_git
 endif
 
-let s:plugin_navigation = 'plugins/navigation'
-if filereadable(s:plugin_navigation)
-  execute 'source' s:plugin_navigation
+let s:plugin_nerdtree = 'plugins/nerdtree'
+if filereadable(s:plugin_nerdtree)
+  execute 'source' s:plugin_nerdtree
 endif
 
 let s:plugin_repeat = 'plugins/repeat'
