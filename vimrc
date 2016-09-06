@@ -100,6 +100,11 @@ if filereadable(s:plugin_endwise)
   execute 'source' s:plugin_endwise
 endif
 
+let s:plugin_delimitmate = 'plugins/delimitmate'
+if filereadable(s:plugin_delimitmate)
+  execute 'source' s:plugin_delimitmate
+endif
+
 let s:plugin_git = 'plugins/git'
 if filereadable(s:plugin_git)
   execute 'source' s:plugin_git
@@ -120,9 +125,9 @@ if filereadable(s:plugin_repeat)
   execute 'source' s:plugin_repeat
 endif
 
-let s:plugin_delimitmate = 'plugins/delimitmate'
-if filereadable(s:plugin_delimitmate)
-  execute 'source' s:plugin_delimitmate
+let s:plugin_session = 'plugins/session'
+if filereadable(s:plugin_session)
+  execute 'source' s:plugin_session
 endif
 
 let s:plugin_vimshell = 'plugins/vimshell'
@@ -186,12 +191,6 @@ endif
 
 " Plug 'tpope/vim-surround'
 
-" session management
-" nnoremap <leader>so :OpenSession<Space>
-" nnoremap <leader>ss :SaveSession<Space>
-" nnoremap <leader>sd :DeleteSession<CR>
-" nnoremap <leader>sc :CloseSession<CR>
-"
 " Lua | Ruby | Erlang | Elixir | MD 
 " Rails | Rspec | Phoenix | Varant | Docker | Ansible 
 " Upcase libs
