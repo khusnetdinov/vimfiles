@@ -4,10 +4,7 @@
 --nofollow
 --group
 
-/* --type-add=js=.coffee.es6 */
-/* --type-add=html=.html.erb,.html.haml,.hamlc,.haml */
-/* --type-add=css=.sass,.scss */
-/* --type-add=doc=.md,.rdoc */
+--type-add=html=html,haml,slim,jade
 
 --ignore-dir=log
 --ignore-dir=tags

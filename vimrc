@@ -126,9 +126,41 @@ endif
 
 "*****************************************************************************
 
+let s:plugin_html = 'plugins/languages/html'
+if filereadable(s:plugin_html)
+  execute 'source' s:plugin_html
+endif
+
+let s:plugin_haml = 'plugins/languages/haml'
+if filereadable(s:plugin_haml)
+  execute 'source' s:plugin_haml
+endif
+
+let s:plugin_slim = 'plugins/languages/slim'
+if filereadable(s:plugin_slim)
+  execute 'source' s:plugin_slim
+endif
+
+let s:plugin_jade = 'plugins/languages/jade'
+if filereadable(s:plugin_jade)
+  execute 'source' s:plugin_jade
+endif
+
+"*****************************************************************************
+
 " Plug 'tpope/vim-surround'
+"
 " Plug 'merlinrebrovic/focus.vim'
 " Plug 'amerlyq/vim-focus-autocmd'
+"
+" Plug 'AndrewRadev/splitjoin.vim'
+" Plug 'godlygeek/tabular'
+" Plug 'vim-scripts/AutoClose'
+"
+" Plug 'bkad/CamelCaseMotion'
+" Plug 'Lokaltog/vim-easymotion'
+"
+" Plug 'kien/ctrlp.vim'
 
 call plug#end()
 filetype plugin indent on
