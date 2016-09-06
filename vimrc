@@ -1,5 +1,6 @@
 "*****************************************************************************
 """ Loading vim rc and plugins settings
+"*****************************************************************************
 
 set nocompatible
 let mapleader=","
@@ -194,6 +195,9 @@ endif
 " Lua | Ruby | Erlang | Elixir | MD 
 " Rails | Rspec | Phoenix | Varant | Docker | Ansible 
 " Upcase libs
+"
+" Snipets
+" Autocompletion
 
 call plug#end()
 filetype plugin indent on
