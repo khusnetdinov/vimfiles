@@ -65,6 +65,11 @@ if filereadable(s:plugin_ack)
   execute 'source' s:plugin_ack
 endif
 
+let s:plugin_ansible = 'plugins/ansible'
+if filereadable(s:plugin_ansible)
+  execute 'source' s:plugin_ansible
+endif
+
 let s:plugin_abolish = 'plugins/abolish'
 if filereadable(s:plugin_abolish)
   execute 'source' s:plugin_abolish
@@ -146,6 +151,16 @@ if filereadable(s:plugin_vimshell)
   execute 'source' s:plugin_vimshell
 endif
 
+let s:plugin_objects = 'plugins/objects'
+if filereadable(s:plugin_objects)
+  execute 'source' s:plugin_objects
+endif
+
+let s:plugin_rails = 'plugins/rails'
+if filereadable(s:plugin_rails)
+  execute 'source' s:plugin_rails
+endif
+
 "*****************************************************************************
 
 let s:plugin_html = 'plugins/languages/html'
@@ -218,14 +233,17 @@ if filereadable(s:plugin_erlang)
   execute 'source' s:plugin_erlang
 endif
 
+let s:plugin_ruby = 'plugins/languages/ruby'
+if filereadable(s:plugin_ruby)
+  execute 'source' s:plugin_ruby
+endif
+
 "*****************************************************************************
 
 " Plug 'tpope/vim-surround'
 
-" Ruby | Erlang | Elixir  
-" Rails | Rspec | Phoenix | Varant | Docker | Ansible 
-" Upcase libs
-"
+" Rails | Rspec  Ansible | Ruby Upcase
+
 " Snipets
 " Autocompletion
 

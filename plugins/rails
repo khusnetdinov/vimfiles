@@ -1,0 +1,11 @@
+"*****************************************************************************
+""" Rails
+"*****************************************************************************
+
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'tpope/vim-rake', { 'for': 'ruby' }
+Plug 'jgdavey/vim-turbux', { 'for': 'ruby' }
+Plug 'gabebw/vim-spec-runner', { 'for': 'ruby' }
+Plug 'thoughtbot/vim-rspec', { 'for': 'ruby' }
+
+" vim:ft=vim
