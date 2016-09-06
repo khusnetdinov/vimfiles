@@ -115,6 +115,11 @@ if filereadable(s:plugin_nerdtree)
   execute 'source' s:plugin_nerdtree
 endif
 
+let s:plugin_motion = 'plugins/motion'
+if filereadable(s:plugin_motion)
+  execute 'source' s:plugin_motion
+endif
+
 let s:plugin_repeat = 'plugins/repeat'
 if filereadable(s:plugin_repeat)
   execute 'source' s:plugin_repeat
@@ -123,6 +128,17 @@ endif
 let s:plugin_session = 'plugins/session'
 if filereadable(s:plugin_session)
   execute 'source' s:plugin_session
+endif
+
+let s:plugin_systemcopy = 'plugins/systemcopy'
+if filereadable(s:plugin_systemcopy)
+  execute 'source' s:plugin_systemcopy
+endif
+
+
+let s:plugin_titlecase = 'plugins/titlecase'
+if filereadable(s:plugin_titlecase)
+  execute 'source' s:plugin_titlecase
 endif
 
 let s:plugin_vimshell = 'plugins/vimshell'

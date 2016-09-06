@@ -6,8 +6,8 @@ nnoremap <Tab> gt
 nnoremap <S-Tab> gT
 nnoremap <silent> <S-t> :tabnew<CR>
 
-nnoremap <C-n> :bnext<CR>
-nnoremap <C-p> :bprevious<CR>
+nnoremap <C-z> :bnext<CR>
+nnoremap <C-x> :bprevious<CR>
 
 " Bubble single lines
 nmap <C-S-k> ddkP
