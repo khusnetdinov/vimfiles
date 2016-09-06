@@ -7,4 +7,9 @@ autocmd BufWritePre *.haml :%s/\s\+$//e
 autocmd BufWritePre *.slim :%s/\s\+$//e
 autocmd BufWritePre *.jade :%s/\s\+$//e
 
+autocmd BufWritePre *.css :%s/\s\+$//e
+autocmd BufWritePre *.scss :%s/\s\+$//e
+autocmd BufWritePre *.sass :%s/\s\+$//e
+autocmd BufWritePre *.less :%s/\s\+$//e
+
 " vim:ft=vim
