@@ -125,6 +125,7 @@ endif
 
 " Plug 'tpope/vim-surround'
 " Plug 'merlinrebrovic/focus.vim'
+" Plug 'amerlyq/vim-focus-autocmd'
 
 call plug#end()
 filetype plugin indent on
