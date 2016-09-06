@@ -4,7 +4,7 @@
 
 Plug 'flazz/vim-colorschemes'
 
-colorscheme jellybeans
+colorscheme Tomorrow-Night
 
 function PlugThemes()
   silent !ln -s ~/.vim/plugged/vim-colorschemes/colors ~/.vim/colors

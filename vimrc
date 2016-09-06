@@ -1,3 +1,4 @@
+
 "*****************************************************************************
 """ Loading vim rc and plugins settings
 "*****************************************************************************
@@ -95,6 +96,11 @@ if filereadable(s:plugin_git)
   execute 'source' s:plugin_git
 endif
 
+let s:plugin_identation = 'plugins/identation'
+if filereadable(s:plugin_identation)
+  execute 'source' s:plugin_identation
+endif
+
 let s:plugin_nerdtree = 'plugins/nerdtree'
 if filereadable(s:plugin_nerdtree)
   execute 'source' s:plugin_nerdtree
@@ -105,9 +111,9 @@ if filereadable(s:plugin_repeat)
   execute 'source' s:plugin_repeat
 endif
 
-let s:plugin_syntax = 'plugins/syntax'
-if filereadable(s:plugin_syntax)
-  execute 'source' s:plugin_syntax
+let s:plugin_delimitmate = 'plugins/delimitmate'
+if filereadable(s:plugin_delimitmate)
+  execute 'source' s:plugin_delimitmate
 endif
 
 let s:plugin_vimshell = 'plugins/vimshell'
@@ -116,6 +122,9 @@ if filereadable(s:plugin_vimshell)
 endif
 
 "*****************************************************************************
+
+" Plug 'tpope/vim-surround'
+" Plug 'merlinrebrovic/focus.vim'
 
 call plug#end()
 filetype plugin indent on

@@ -3,6 +3,5 @@
 "*****************************************************************************
 
 Plug 'Raimondi/delimitMate'
-Plug 'sheerun/vim-polyglot'
 
 " vim:ft=vim
