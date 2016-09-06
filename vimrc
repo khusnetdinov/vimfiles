@@ -146,6 +146,31 @@ if filereadable(s:plugin_jade)
   execute 'source' s:plugin_jade
 endif
 
+let s:plugin_javascript = 'plugins/languages/javascript'
+if filereadable(s:plugin_javascript)
+  execute 'source' s:plugin_javascript
+endif
+
+let s:plugin_json = 'plugins/languages/json'
+if filereadable(s:plugin_json)
+  execute 'source' s:plugin_json
+endif
+
+let s:plugin_jsx = 'plugins/languages/jsx'
+if filereadable(s:plugin_jsx)
+  execute 'source' s:plugin_jsx
+endif
+
+let s:plugin_coffee = 'plugins/languages/coffee'
+if filereadable(s:plugin_coffee)
+  execute 'source' s:plugin_coffee
+endif
+
+let s:plugin_typescript = 'plugins/languages/typescript'
+if filereadable(s:plugin_typescript)
+  execute 'source' s:plugin_typescript
+endif
+
 "*****************************************************************************
 
 " Plug 'tpope/vim-surround'
@@ -161,6 +186,12 @@ endif
 " Plug 'Lokaltog/vim-easymotion'
 "
 " Plug 'kien/ctrlp.vim'
+"
+" session management
+" nnoremap <leader>so :OpenSession<Space>
+" nnoremap <leader>ss :SaveSession<Space>
+" nnoremap <leader>sd :DeleteSession<CR>
+" nnoremap <leader>sc :CloseSession<CR>
 
 call plug#end()
 filetype plugin indent on

@@ -5,6 +5,7 @@
 Before installing make sure that you have installed `git`, `macvim`.
 
 Brew: `ack`
+Brew: `jq` need for pretty JSON
 
 ### Installation
 

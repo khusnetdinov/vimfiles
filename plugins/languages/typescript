@@ -1,0 +1,15 @@
+"*****************************************************************************
+""" Typescript
+"*****************************************************************************
+
+Plug 'leafgarland/typescript-vim'
+
+" let g:typescript_compiler_binary = 'tsc'
+" let g:typescript_compiler_options = ''
+
+" autocmd FileType typescript :set makeprg=tsc
+" autocmd QuickFixCmdPost [^l]* nested cwindow
+" autocmd QuickFixCmdPost    l* nested lwindow
+
+" vim:ft=vim
+

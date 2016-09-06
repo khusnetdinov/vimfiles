@@ -6,8 +6,6 @@
 
 --type-add=html=html,haml,slim,jade
 --type-add=css=css,less,scss,sass
+--type-add=js=js,coffee,ts,es6,jsx,cjsx,json
 
---ignore-dir=log
---ignore-dir=tags
---ignore-dir=tmp
---ignore-dir=.tmp
+/* --ignore-dir=folder */

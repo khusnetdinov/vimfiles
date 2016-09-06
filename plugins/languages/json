@@ -1,0 +1,16 @@
+"*****************************************************************************
+""" JSON 
+"*****************************************************************************
+
+Plug 'elzr/vim-json',            { 'for': 'json' }
+
+let g:vim_json_syntax_conceal = 0
+
+function! s:PrettyJSON()
+  %!jq .
+  set filetype=json
+endfunction
+
+command! PrettyJSON :call <sid>PrettyJSON()
+
+" vim:ft=vim

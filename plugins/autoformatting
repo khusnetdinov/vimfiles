@@ -12,4 +12,12 @@ autocmd BufWritePre *.scss :%s/\s\+$//e
 autocmd BufWritePre *.sass :%s/\s\+$//e
 autocmd BufWritePre *.less :%s/\s\+$//e
 
+autocmd BufWritePre *.js :%s/\s\+$//e
+autocmd BufWritePre *.coffee :%s/\s\+$//e
+autocmd BufWritePre *.es6 :%s/\s\+$//e
+autocmd BufWritePre *.ts :%s/\s\+$//e
+autocmd BufWritePre *.json :%s/\s\+$//e
+autocmd BufWritePre *.jsx :%s/\s\+$//e
+autocmd BufWritePre *.cjsx :%s/\s\+$//e
+
 " vim:ft=vim
