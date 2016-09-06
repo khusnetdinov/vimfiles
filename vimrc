@@ -80,6 +80,11 @@ if filereadable(s:plugin_airline)
   execute 'source' s:plugin_airline
 endif
 
+let s:plugin_eunuch = 'plugins/eunuch'
+if filereadable(s:plugin_eunuch)
+  execute 'source' s:plugin_eunuch
+endif
+
 let s:plugin_endwise = 'plugins/endwise'
 if filereadable(s:plugin_endwise)
   execute 'source' s:plugin_endwise
