@@ -171,6 +171,11 @@ if filereadable(s:plugin_typescript)
   execute 'source' s:plugin_typescript
 endif
 
+let s:plugin_elm = 'plugins/languages/elm'
+if filereadable(s:plugin_elm)
+  execute 'source' s:plugin_elm
+endif
+
 "*****************************************************************************
 
 " Plug 'tpope/vim-surround'
@@ -178,7 +183,6 @@ endif
 " Plug 'merlinrebrovic/focus.vim'
 " Plug 'amerlyq/vim-focus-autocmd'
 "
-" Plug 'AndrewRadev/splitjoin.vim'
 " Plug 'godlygeek/tabular'
 " Plug 'vim-scripts/AutoClose'
 "

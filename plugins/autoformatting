@@ -19,5 +19,6 @@ autocmd BufWritePre *.ts :%s/\s\+$//e
 autocmd BufWritePre *.json :%s/\s\+$//e
 autocmd BufWritePre *.jsx :%s/\s\+$//e
 autocmd BufWritePre *.cjsx :%s/\s\+$//e
+autocmd BufWritePre *.elm :%s/\s\+$//e
 
 " vim:ft=vim

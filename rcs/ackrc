@@ -6,6 +6,6 @@
 
 --type-add=html=html,haml,slim,jade
 --type-add=css=css,less,scss,sass
---type-add=js=js,coffee,ts,es6,jsx,cjsx,json
+--type-add=js=js,coffee,ts,es6,jsx,cjsx,json,elm
 
 /* --ignore-dir=folder */
