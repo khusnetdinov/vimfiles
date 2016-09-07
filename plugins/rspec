@@ -2,8 +2,8 @@
 """ Rspec
 "*****************************************************************************
 
-" Plug 'thoughtbot/vim-rspec'
-" Plug 'gabebw/vim-spec-runner'
+Plug 'thoughtbot/vim-rspec'
+Plug 'gabebw/vim-spec-runner'
 
 " vim:ft=vim
 
