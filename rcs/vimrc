@@ -54,8 +54,6 @@ endfor
 
 " Plug 'tpope/vim-surround'
 
-" Rails | Rspec |  Ruby Upcase
-
 " Snipets
 " Autocompletion
 

@@ -9,6 +9,7 @@
 --type-add=js=js,coffee,ts,es6,jsx,cjsx,json,elm
 
 --ignore-dir=log
+--ignore-dir=tags
 --ignore-dir=tmp
 --ignore-dir=.rvm
 --ignore-dir=public/assets
