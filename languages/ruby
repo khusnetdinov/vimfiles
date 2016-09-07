@@ -3,6 +3,7 @@
 "*****************************************************************************
 
 Plug 'vim-ruby/vim-ruby'
+" Plug 'hwartig/vim-seeing-is-believing'
 " Plug 't9md/vim-ruby-xmpfilter'
 
 autocmd BufRead, BufNewFile Vagrantfile set filetype=ruby
