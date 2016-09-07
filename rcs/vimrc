@@ -43,6 +43,7 @@ endfor
 "*****************************************************************************
 """ Load languages settings
 "*****************************************************************************
+
 for language in split(globpath(dotfiles_home . 'languages', '*'), '\n')
   if filereadable(language)
     execute 'source' language
@@ -53,7 +54,7 @@ endfor
 
 " Plug 'tpope/vim-surround'
 
-" Rails | Rspec  Ansible | Ruby Upcase
+" Rails | Rspec |  Ruby Upcase
 
 " Snipets
 " Autocompletion

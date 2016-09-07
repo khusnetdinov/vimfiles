@@ -43,6 +43,4 @@ set textwidth=80
 set colorcolumn=+1
 highlight ColorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
-
-
 " vim:ft=vim
