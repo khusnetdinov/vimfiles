@@ -8,4 +8,8 @@
 --type-add=css=css,less,scss,sass
 --type-add=js=js,coffee,ts,es6,jsx,cjsx,json,elm
 
-/* --ignore-dir=folder */
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=.rvm
+--ignore-dir=public/assets
+--ignore-dir=node_modules

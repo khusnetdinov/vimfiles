@@ -6,5 +6,10 @@ Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'michaeljsmith/vim-indent-object'
 
+augroup rubypath
+  autocmd!
+  autocmd FileType ruby setlocal suffixesadd+=.rb
+augroup END
+
 " vim:ft=vim
 

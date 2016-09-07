@@ -3,7 +3,7 @@
 "*****************************************************************************
 
 Plug 'vim-ruby/vim-ruby'
-Plug 't9md/vim-ruby-xmpfilter'
+" Plug 't9md/vim-ruby-xmpfilter'
 
 autocmd BufRead, BufNewFile Vagrantfile set filetype=ruby
 autocmd BufRead, BufNewFile Gemfile set filetype=ruby

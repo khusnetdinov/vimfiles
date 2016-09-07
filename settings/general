@@ -16,9 +16,10 @@ set backspace=indent,eol,start
 "" Tabs.
 set tabstop=2
 set shiftwidth=2
-set softtabstop=0
+set softtabstop=2
 set shiftround
 set expandtab
+set autoindent
 
 "" Map leader to ,
 let mapleader=','

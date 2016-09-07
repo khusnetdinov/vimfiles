@@ -2,18 +2,13 @@
 """ Mappings
 "*****************************************************************************
 
-nnoremap <Tab> gt
-nnoremap <S-Tab> gT
 nnoremap <silent> <S-t> :tabnew<CR>
 
 nnoremap <C-z> :bnext<CR>
 nnoremap <C-x> :bprevious<CR>
 
-" Bubble single lines
 nmap <C-S-k> ddkP
 nmap <C-S-j> ddp
-
-" Bubble multiple lines
 vmap <C-S-k> xkP`[V`]
 vmap <C-S-j> xp`[V`]
 
