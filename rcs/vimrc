@@ -11,7 +11,7 @@ filetype off
 "*****************************************************************************
 
 let vim_home = $HOME . '/.vim/'
-let dotfiles_home = $HOME . '/dotfiles/'
+let dotfiles_home = $HOME . '/.dotfiles/'
 
 if !filereadable(expand(vim_home . 'autoload/plug.vim'))
   silent !\curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
