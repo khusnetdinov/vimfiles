@@ -7,3 +7,4 @@ Plug 'mxw/vim-jsx', { 'for': 'javascript' }
 Plug 'kern/vim-es7', { 'for': 'javascript' }
 
 " vim:ft=vim
+

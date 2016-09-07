@@ -58,3 +58,4 @@ set history=500
 set timeout ttimeoutlen=100 timeoutlen=5000
 
 " vim:ft=vim
+

@@ -9,3 +9,4 @@
 " Plug 'thoughtbot/vim-rspec', { 'for': 'ruby' }
 
 " vim:ft=vim
+

@@ -18,3 +18,4 @@ let g:elm_classic_highlighting = 1
 " let g:elm_classic_highlighting = 0
 
 " vim:ft=vim
+

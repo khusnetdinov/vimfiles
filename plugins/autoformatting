@@ -22,3 +22,4 @@ autocmd BufWritePre *.cjsx :%s/\s\+$//e
 autocmd BufWritePre *.elm :%s/\s\+$//e
 
 " vim:ft=vim
+

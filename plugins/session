@@ -11,3 +11,4 @@ nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sc :CloseSession<CR>
 
 " vim:ft=vim
+

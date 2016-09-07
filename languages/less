@@ -2,8 +2,9 @@
 """ Less
 "*****************************************************************************
 
-Plug 'groenewege/vim-less'. { 'for': 'less' }
+Plug 'groenewege/vim-less', { 'for': 'less' }
 
 nnoremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
 " vim:ft=vim
+

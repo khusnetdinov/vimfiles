@@ -14,3 +14,4 @@ endfunction
 command! PlugThemes :call PlugThemes()
 
 " vim:ft=vim
+

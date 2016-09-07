@@ -11,3 +11,4 @@ let g:vimshell_prompt =  '$ '
 nnoremap <silent> <leader>sh :VimShellCreate<CR>
 
 " vim:ft=vim
+

@@ -5,3 +5,4 @@
 Plug 'jimenezrick/vimerl', { 'for': 'erlang' }
 
 " vim:ft=vim
+

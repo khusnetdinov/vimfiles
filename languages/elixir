@@ -6,3 +6,4 @@ Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'mattreduce/vim-mix'
 
 " vim:ft=vim
+

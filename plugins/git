@@ -27,3 +27,4 @@ nmap <Leader>hu <Plug>GitGutterUndoHunk
 nmap <Leader>hh <Plug>GitGutterPreviewHunk
 
 " vim:ft=vim
+

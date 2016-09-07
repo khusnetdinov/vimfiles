@@ -46,3 +46,4 @@ let g:ctrlp_custom_ignore = {
 " nnoremap <leader>cpr :CtrlP =system('git rev-parse --show-toplevel')<cr><bs><cr>
 
 " vim:ft=vim
+

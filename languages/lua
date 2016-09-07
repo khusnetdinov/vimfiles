@@ -6,3 +6,4 @@ Plug 'xolox/vim-lua-ftplugin', { 'for': 'lua' }
 Plug 'xolox/vim-lua-inspect', { 'for': 'lua' }
 
 " vim:ft=vim
+
