@@ -1,10 +1,9 @@
 "*****************************************************************************
-""" Rails
+""" Rspec
 "*****************************************************************************
 
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-rake' 
-Plug 'tpope/vim-bundler' 
+" Plug 'thoughtbot/vim-rspec'
+" Plug 'gabebw/vim-spec-runner'
 
 " vim:ft=vim
 
